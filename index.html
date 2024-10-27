@@ -12,6 +12,8 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            background-color: #000000; /* Добавили чёрный фон */
+            color: #ffffff; /* Изменили текст на белый */
         }
 
         button {
@@ -22,15 +24,20 @@
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 18px;
+            font-size: 24px; /* Увеличили шрифт */
             border-radius: 10px;
             cursor: pointer;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             margin-bottom: 20px; /* Отступ снизу кнопки */
+            text-shadow: 0 0 10px #4CAF50; /* Неон свечение текста */
+            outline: 4px solid #4CAF50; /* Неон свечение рамки */
+            outline-offset: -6px; /* Смещение рамки для эффекта */
         }
 
         button:hover {
             background-color: #3e8e41;
+            outline: 4px solid #3e8e41; /* Цвет рамки при наведении */
+            text-shadow: 0 0 15px #3e8e41; /* Цвет свечения при наведении */
         }
 
         .info {
@@ -41,12 +48,16 @@
         .info h2 {
             margin-bottom: 10px; /* Отступ снизу заголовка */
         }
+
+        .info ol {
+            margin-top: 0; /* Убрали отступы сверху списка */
+        }
     </style>
 </head>
 <body>
     <h1>Download File</h1>
     <p>Click the button to download the file.</p>
-    <a href="https://github.com/reyelind/verbose-succotash/releases/download/1/srealerocjk.rar" download="srealerocjk.rar">
+    <a href="your_file.zip" download="your_file.zip">
         <button>Download</button>
     </a>
 
@@ -58,7 +69,7 @@
         </ol>
 
         <h2>Info:</h2>
-        <p><b>Below:</b></p>
+        <p><b>Information:</b></p>
         <p>If you can’t install the program, you need to:</p>
         <ul>
             <li>Try to copy the link and paste into another browser.</li>
